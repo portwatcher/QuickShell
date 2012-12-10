@@ -1,0 +1,63 @@
+body
+{
+	text-align: 	center;
+	font-family:	"Î¢ÈíÑÅºÚ",cursive;
+}
+
+#output
+{
+	margin-left:	auto;
+	margin-right:	auto;
+	text-align: 	left;
+	border-style: 	dashed;
+	border-color:	#BF4040;
+	width:			560px;
+}
+
+#login
+{
+	margin:			auto;
+	width:			300px;
+	border-color:	#BF4040;	
+}
+
+#login input[type="password"]
+{
+	margin-left:	auto;
+	margin-right:	auto;
+	width:			300px;
+	height:			35px;
+	font-size:		45px;
+}
+
+#login input[type="submit"]
+{
+	font-size:		20px;
+}
+
+#console
+{
+	margin-top:		30px;
+	margin-bottom:	30px;
+	margin-left:	auto;
+	margin-right:	auto;
+}
+
+#console input[type="number"]
+{
+	width:			40px;
+}
+
+#table
+{
+	margin-top:			40px;
+	/*border-style:		solid;*/
+	background-color:	#DF9F9F;
+	color:				#ffffff;
+	/*width:				90%;*/
+}
+
+#id
+{
+	text-align:	center;
+}
