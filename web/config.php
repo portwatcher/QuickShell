@@ -1,7 +1,8 @@
 <?php
 //configuration file
-	$dbname = "localhost";
+	$dbname = "yourdbname";
 	$username = "yourname";
 	$password = "yourpass";
-	//date_default_timezone_set("Asia/Shanghai");
+	$dbhost= "localhost";
+//	date_default_timezone_set("Asia/Shanghai");
 ?>

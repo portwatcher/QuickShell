@@ -1,11 +1,6 @@
 <?php
-require("config.php");
-$mysqli = new mysqli("localhost",$username,$password,"yourdbname");
-if(mysqli_connect_error())
-{
-	printf("cant connect to the database：%s\n",mysqli_connect_error());
-	exit();
-}
+require("dbconn.php");
+
 
 if (isset($_SESSION["admin"]))
 {

@@ -1,12 +1,6 @@
 <?php
 //处理请求并返回一个id
-require("config.php");
-$mysqli = new mysqli("localhost",$username,$password,"yourdbname");
-if(mysqli_connect_error())
-{
-	printf("cant connect to the database：%s\n",mysqli_connect_error());
-	exit();
-}
+require("dbconn.php");
 
 
 $name = $_GET["name"];

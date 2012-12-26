@@ -1,11 +1,5 @@
 <?php
-require("config.php");
-$mysqli = new mysqli("localhost",$username,$password,"yourdbname");
-if(mysqli_connect_error())
-{
-	printf("cant connect to the database：%s\n",mysqli_connect_error());
-	exit();
-}
+require("dbconn.php");
 
 //to save the cmd that hacker input and insert the cmd into database
 if(isset($_SESSION["admin"]))

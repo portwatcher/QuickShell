@@ -1,11 +1,5 @@
 <?php
-require("config.php");
-$mysqli = new mysqli("localhost",$username,$password,"yourdbname");
-if(mysqli_connect_error())
-{
-	printf("cant connect to the database：%s\n",mysqli_connect_error());
-	exit();
-}
+require("dbconn.php");
 
 //将截屏命令插入数据库
 if($_POST["id"]!=NULL)
